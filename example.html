@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>openCanvas Example</title>
+    </head>
+    <body>
+        <canvas id="tutorial" width="800px" height="600px"></canvas>
+        <script src="openCanvas.js"></script>
+        <script>
+            let canvasElement = document.getElementById("tutorial");
+            let myCanvas = new openCanvas(canvasElement);
+            myCanvas.fan(400, 300, 1.2*Math.PI, 1.8*Math.PI, 100, 50);
+            myCanvas.getContext().fill();
+        </script>
+    </body>
+</html>
